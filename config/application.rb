@@ -23,5 +23,14 @@ module HelloRailsBackEnd
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
+
+    # CORS
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins 'http://localhost:3000' # Update this to the actual origin of your React frontend
+        resource 'http://localhost:3000', headers: :any, methods: [:get, :post, :put, :patch, :delete, :options, :head]
+      end
+    end
+    
   end
 end
