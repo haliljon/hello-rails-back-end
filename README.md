@@ -23,7 +23,7 @@
 
 # 📖 Hello-rails-back-end <a name="about-project"></a>
 
-**Hello-rails-back-end** is an tutorial for react and rails in two projects.
+**Hello-rails-back-end** is an tutorial for react and rails in two projects
 
 ## 🛠 Built With <a name="built-with"></a>
 
